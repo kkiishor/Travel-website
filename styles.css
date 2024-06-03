@@ -13,6 +13,15 @@ html{
   font-size: 2rem;
 }
 
+.btn{
+  border: 1px solid red;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  padding: 1.3rem;
+  margin: 10px 0;
+}
+
 
 .firstPage{
   /* border: 2px solid black; */
@@ -91,7 +100,7 @@ button{
 
 .secondPage{
   /* border: 2px solid black; */
-  background-color: lightblue;
+  background-color: #ddd;
   padding: 10rem 0;
 }
 
@@ -107,11 +116,11 @@ button{
 }
 
 .firstsection , .secondsection{
-  border: 2px solid black;
+  /* border: 2px solid black; */
   height: 230px;
 }
 
-.firstsection, .secondsection::after{
+.firstsection::after, .secondsection::after {
   content: "";
   display: block;
   clear: both;
@@ -119,7 +128,7 @@ button{
 
 .firstsection .imgBox,
 .secondsection .textBox{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 50%;
   height: 100%;
   float: left;
@@ -127,7 +136,7 @@ button{
 
 .firstsection .textBox,
 .secondsection .imgBox{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 50%;
   height: 100%;
   float: right;
@@ -139,13 +148,23 @@ button{
   width: 100%;
 }
 
+
 .textBox{
-  padding: 1rem;
+  padding: 2rem;
+  overflow: hidden; 
+  background-color: white;
+  /* word-wrap: break-word;  */
+  /* text-overflow: ellipsis; */
+}
+
+.textBox p{
+  font-size: 1.6rem;
 }
 
 .secondPage h2{
-  padding: 1rem;
+  padding: 1rem 0;
 }
+
 
  /************************************************* Third page **********************************************/
 
@@ -220,14 +239,27 @@ button{
   font-size: 1.5rem;
  }
 
+
  /* ***************************  SECOND PAGE SECTION RESPONSIVENESS ***********************/
 
- /* @media screen and (max-width: 850px) {
-  .secondPage section{
-    width: 100%;
-    font-size: 10rem;
+ @media (max-width: 825px) {
+  .firstsection, .secondsection {
+    height: auto; /* Allow sections to expand */
   }
-} */
+
+  .firstsection .imgBox,
+  .secondsection .textBox,
+  .firstsection .textBox,
+  .secondsection .imgBox {
+    width: 100%;
+    height: 250px; /* Allow boxes to expand */
+    float: none;
+  }
+
+  .textBox p {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+}
 
 
  
