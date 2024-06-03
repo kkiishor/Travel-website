@@ -1,0 +1,165 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+.aboutPage{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+
+.navbar{
+  /* border: 2px solid red; */
+  background-color: rgb(58, 57, 57);
+  padding-top: 1em;
+  width: 100%;
+  height: 10%;
+  content: "";
+  display: inline-block;
+  clear: both;
+  color: white;
+}
+
+.logo{
+  float: left;
+  /* border: 2px solid black; */
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+
+.travellogo{
+  /* border: 2px solid blue; */
+  width: 25%;
+  height: 80%;
+}
+
+.navigation{
+  float: right;
+  /* border: 2px solid black; */
+  list-style-type: none;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding-top: 0.8025em;
+  font-size: 1.6rem;
+
+}
+
+.navigation li{
+  display: inline;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+/* about us */
+
+.aboutus{
+  /* border: 2px solid red; */
+  background-color: aliceblue;
+  width: 65%;
+  height: 47%;
+  padding: 1em;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.aboutus h2{
+  border-bottom: 2px rgb(243, 22, 59) solid;
+}
+
+.bothlist{
+  /* border: 2px rgb(15, 0, 3) solid; */
+  width: 100%;
+  content: "";
+  display: inline-block;
+  clear: both;
+  text-align: center;
+  line-height: 20px;
+  margin-top: 1em;
+}
+
+.firstlist{
+  /* border: 2px rgb(5, 0, 15) solid; */
+  width: 50%;
+  float: left;
+
+}
+
+.secondlist{
+  /* border: 2px rgb(170, 1, 35) solid; */
+  width: 50%;
+  float: right;
+}
+
+ul li:before {
+  content: '✓  '; 
+ }
+
+ .four{
+  width: 100%;
+ }
+
+ .four .one, .two, .three, .fourth{
+  /* border: 1px solid blue; */
+  width: 25%;
+  float: left;
+  text-align: center;
+  padding: 1em;
+ }
+
+ .bottom{
+  /* border: 2px solid black; */
+  background-color: crimson;
+  width: 100%;
+  height: 20%;
+  margin-top: 0.50em;
+  padding: 0.50em;
+  content: "";
+  display: inline-block;
+  clear: both;
+  color: white;
+ }
+
+ .bottom p{
+  /* border: 2px solid white; */
+  width: 50%;
+  float: left;
+  font-size: 1.5rem;
+ }
+
+ .bottom .button{
+  width: 50%;
+  float:right;
+  text-align: center;
+ }
+
+ .button button{
+  background-color: rgb(177, 19, 72);
+  /* border: 2px solid rgb(255, 255, 255); */
+  width:150px;
+  height: 25px;
+  font-size: 1.6rem;
+  color: white;
+ }
+
+/*
+ .lists ul .fistul{
+  float: left;
+  width: 50%;
+ }
+
+ .lists ul .secondul{
+  float: right;
+  width: 50%;
+ } */

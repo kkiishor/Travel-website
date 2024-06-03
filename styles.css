@@ -1,0 +1,233 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+
+.mg-heading{
+  font-size: 2rem;
+}
+
+
+.firstPage{
+  /* border: 2px solid black; */
+  height: 100vh;
+  background-color: antiquewhite;
+  position: relative;
+  background-image: url(Bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar{
+  /* border: 2px solid red; */
+  padding-top: 1em;
+  width: 100%;
+  height: 10%;
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.logo{
+  float: left;
+  /* border: 2px solid black; */
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+
+.travellogo{
+  /* border: 2px solid blue; */
+  width: 25%;
+  height: 80%;
+}
+
+.navigation{
+  float: right;
+  /* border: 2px solid black; */
+  list-style-type: none;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding-top: 0.8025em;
+  font-size: 1.6rem;
+
+}
+
+.navigation li{
+  display: inline;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+.navigation li a{
+  text-decoration: underline;
+  /* color: gray; */
+}
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+button{
+  background-color: aliceblue;
+  color: red;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+/********************************** Second Page Design **************************************/
+
+.secondPage{
+  /* border: 2px solid black; */
+  background-color: lightblue;
+  padding: 10rem 0;
+}
+
+.container{
+  /* border: 2px solid red; */
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.firstsection{
+  margin-bottom: 5rem;
+}
+
+.firstsection , .secondsection{
+  border: 2px solid black;
+  height: 230px;
+}
+
+.firstsection, .secondsection::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.firstsection .imgBox,
+.secondsection .textBox{
+  border: 2px solid red;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.firstsection .textBox,
+.secondsection .imgBox{
+  border: 2px solid red;
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+
+.firstsection img,
+.secondsection img{
+  height: 100%;
+  width: 100%;
+}
+
+.textBox{
+  padding: 1rem;
+}
+
+.secondPage h2{
+  padding: 1rem;
+}
+
+ /************************************************* Third page **********************************************/
+
+ .thirdPage{
+  position: relative;
+  /* border: 3px solid rgb(231, 11, 11); */
+  height: 65vh;
+ }
+
+/* Before Footer contain */
+.thirdPage .beforeFooter{
+  /* border: 2px solid black; */
+  width: 70%;
+  height: 45%;
+  content: "";
+  display: inline-block;
+  clear: both;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+
+ .beforeFooter div{
+  width: 33.33%;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 1.22em;
+  color: white;
+ }
+
+ .beforeFooter .adventourus{
+  background-color: rgb(5, 34, 59);
+  width: 33.33%;
+  float: left;
+ }
+ .beforeFooter .lessPrice{
+  background-color: rgb(204, 14, 125);
+  width: 33.33%;
+  float: left;
+ }
+ .beforeFooter .experience{
+  background-color: rgb(5, 34, 59);
+  width: 33.33%;
+  float: left;
+ }
+
+
+
+
+
+ /* footer */
+
+ footer{
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  /* border: 2px solid red; */
+  background-color: rgb(151, 148, 148);
+  text-align: center;
+  padding-top: 1.5%;
+  bottom: 0;
+ }
+
+ footer img{
+  margin-right: 20px;
+  width: 4em;
+  height: auto;
+ }
+
+ footer p{
+  font-size: 1.5rem;
+ }
+
+ /* ***************************  SECOND PAGE SECTION RESPONSIVENESS ***********************/
+
+ /* @media screen and (max-width: 850px) {
+  .secondPage section{
+    width: 100%;
+    font-size: 10rem;
+  }
+} */
+
+
+ 
