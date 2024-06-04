@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -6,20 +8,27 @@
 
 html{
   font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+
 }
 
 /* ************************************utility classes*********************************/
 
 .mg-heading{
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .large{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.paraSize{
+  font-size: 1rem;
 }
 
 .container{
-  border: 2px red solid;
+  /* border: 2px red solid; */
   max-width: 1000px;
   width: 90%;
   margin: 0 auto;
@@ -30,19 +39,31 @@ html{
   display: inline-block;
   border-radius: 25px;
   font-size: 1.5rem;
-  padding: 1.3rem;
+  padding: 1rem;
   margin: 10px 0;
 }
 
 /*******************************First Page ****************************************/
 
 .firstPage{
-  border: 2px solid black;
-  height: 100vh;
-  background-image: url(Bg.jpg);
+  /* border: 2px solid black; */
+  height: 95vh;
+  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),url(../img/Bg.jpg);
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.forpadding{
+  /* border: 2px red solid; */
+  padding: 1.5rem;
+}
+
+.forpadding::after{
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .navigation{
@@ -50,48 +71,47 @@ html{
   float: right;
   width: 55%;
   text-align: center;
-  margin-top: 1rem;
+  /* padding-top: 0.5rem;  */
 } 
 
 .navigation li{
   /* border: 2px solid blue; */
   display: inline;
-  padding: 0 1.6rem;
+  padding: 0 1.3rem;
 }
+
+li a:hover{
+  color: green;
+  text-decoration: underline;
+}
+
+.navigation a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+}
+
+
 
 .logo{
   /* border: 2px solid black; */
   float: left;
   width: 45%;
-  margin-top: 1rem;
 }
+
+/* 
+.navigation, .logo{
+  height: 30px;
+  margin-top: 1.5rem;
+  padding-top: 1rem ;
+} */
+
 
 .container::after{
   content: "";
   display: block;
   clear: both;
 }
-
-.menu-icon {
-  display: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-/* .navbar{
-  border: 2px solid red;
- float: right;
-} */
-
-
-
-/* .travellogo{
-  border: 2px solid blue;
-  width: 25%;
-  height: 80%;
-} */
-/* 
-
 
 
 .center{
@@ -124,7 +144,7 @@ button{
 }
 
 .firstsection , .secondsection{
-  /* border: 2px solid black; */
+  border: 2px solid black;
   height: 230px;
 }
 
@@ -158,7 +178,7 @@ button{
 
 
 .textBox{
-  padding: 2rem;
+  padding: 1.8rem;
   overflow: hidden; 
   background-color: white;
   /* word-wrap: break-word;  */
@@ -166,75 +186,73 @@ button{
 }
 
 .textBox p{
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .secondPage h2{
-  padding: 1rem 0;
+  padding: 0 0;
 }
 
 
  /************************************************* Third page **********************************************/
 
  .thirdPage{
-  position: relative;
-  /* border: 3px solid rgb(231, 11, 11); */
-  height: 65vh;
+  background-color: #ddd;
  }
 
-/* Before Footer contain */
-.thirdPage .beforeFooter{
-  /* border: 2px solid black; */
-  width: 70%;
-  height: 45%;
+ .thirdPage .beforeFooter{
+  /* border: 3px solid blue; */
+  padding: 10rem 0;
+  background-color: #ddd;
+
+}
+
+.beforeFooter::after{
   content: "";
-  display: inline-block;
+  display: block;
   clear: both;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
- }
+}
 
- .beforeFooter div{
+.adventourus,
+.lessPrice,
+.experience{
   width: 33.33%;
+  float: left;
   text-align: center;
-  font-size: 1.6rem;
-  padding: 1.22em;
+  padding: 2rem;
+}
+
+.thirdPagePara{
+  /* border: 1px solid green; */
+  margin-top: 0.5rem;
+  font-weight: 500;
+  line-height: 1.6;
+  padding: 3rem 0;
+}
+
+.adventourus,
+.experience{
+  background-color: #263238;
   color: white;
- }
+}
 
- .beforeFooter .adventourus{
-  background-color: rgb(5, 34, 59);
-  width: 33.33%;
-  float: left;
- }
- .beforeFooter .lessPrice{
-  background-color: rgb(204, 14, 125);
-  width: 33.33%;
-  float: left;
- }
- .beforeFooter .experience{
-  background-color: rgb(5, 34, 59);
-  width: 33.33%;
-  float: left;
- }
+.lessPrice{
+  background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+  color: white;
+}
 
 
 
 
 
- /* footer */
+ /***************************************** footer ********************************************/
 
  footer{
-  position: absolute;
-  height: 20%;
+  border: 1px solid green;
+  background-color: #263238;
   width: 100%;
-  /* border: 2px solid red; */
-  background-color: rgb(151, 148, 148);
   text-align: center;
-  padding-top: 1.5%;
-  bottom: 0;
+  padding: 1.5rem 0;
  }
 
  footer img{
@@ -269,21 +287,30 @@ button{
   }
 }
 
-@media (max-width: 501px){
+@media (max-width: 540px){
 
-  .firstPage .logo{
-    width: 25%;
+  .firstPage .logo, .navigation{
+    width: 100%;
+    float: none;
+    text-align: center;
   }
 
-  .firstPage .navigation{
-    width: 75%;
-  }
 
   .navigation li{
     /* border: 2px solid blue; */
     display: inline;
     padding: 0 0.5rem;
   }
-}
 
+  .center botton{
+    padding: 0.5rem;
+    font-size: 0.5rem;
+  }
+
+  .thirdPagePara {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+} 
  
