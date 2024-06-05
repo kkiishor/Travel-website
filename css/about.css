@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -6,87 +8,88 @@
 
 html{
   font-size: 62.5%;
+  font-family:  "Montserrat", sans-serif;
 }
 
-.aboutPage{
-  width: 100vw;
-  height: 100vh;
-  position: relative;
+.container{
+  /* border: 2px rgb(47, 0, 255) solid; */
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 5rem;
 }
 
+.mg-heading{
+  font-size: 2rem;
+}
 
-.navbar{
-  /* border: 2px solid red; */
-  background-color: rgb(58, 57, 57);
-  padding-top: 1em;
-  width: 100%;
-  height: 10%;
-  content: "";
-  display: inline-block;
-  clear: both;
+.parafontsize{
+  font-size: 1.3rem;
+}
+
+a{
+  text-decoration: none;
   color: white;
 }
 
-.logo{
+/****************************************************************************/
+.navbar{
+  /* border: 2px solid red; */
+  background-color: #334147;
+  padding: 2.5rem;
+}
+.navbar::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.navbar h1{
   float: left;
-  /* border: 2px solid black; */
-  width: 50%;
-  height: 100%;
-  text-align: center;
+  color: white;
 }
-
-.travellogo{
-  /* border: 2px solid blue; */
-  width: 25%;
-  height: 80%;
-}
-
-.navigation{
+.navbar ul{
   float: right;
-  /* border: 2px solid black; */
-  list-style-type: none;
-  width: 50%;
-  height: 100%;
-  text-align: center;
-  padding-top: 0.8025em;
-  font-size: 1.6rem;
-
 }
 
-.navigation li{
-  display: inline;
-  margin-left: 10px;
-  text-transform: uppercase;
+.navbar ul li{
+  display: inline-block;
+  padding-right: 2rem;
+  font-size: 1.5rem;
 }
 
-/* about us */
+
+/******************************************** about us ***********************************************/
 
 .aboutus{
   /* border: 2px solid red; */
-  background-color: aliceblue;
-  width: 65%;
-  height: 47%;
-  padding: 1em;
-  font-size: 1.3rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 5rem 0;
 }
 
-.aboutus h2{
+.aboutus h1{
   border-bottom: 2px rgb(243, 22, 59) solid;
+  color: rgb(161, 32, 54);
+  font-weight: 500;
+  padding: 0.5em;
+}
+
+.aboutus p{
+  /* border: 2px solid gray; */
+  padding: 0.6rem;
 }
 
 .bothlist{
   /* border: 2px rgb(15, 0, 3) solid; */
   width: 100%;
-  content: "";
-  display: inline-block;
-  clear: both;
+  padding: 0.5em 0;
   text-align: center;
   line-height: 20px;
-  margin-top: 1em;
+}
+
+.bothlist::after{
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .firstlist{
@@ -95,20 +98,25 @@ html{
   float: left;
 
 }
-
 .secondlist{
   /* border: 2px rgb(170, 1, 35) solid; */
   width: 50%;
   float: right;
 }
 
-ul li:before {
+.bothlist li:before {
   content: '✓  '; 
  }
 
  .four{
-  width: 100%;
+    /* border: 2px rgb(170, 1, 35) solid; */
+    width: 100%;
  }
+ .four::after{
+  content: "";
+  display: block;
+  clear: both;
+}
 
  .four .one, .two, .three, .fourth{
   /* border: 1px solid blue; */
@@ -122,44 +130,61 @@ ul li:before {
   /* border: 2px solid black; */
   background-color: crimson;
   width: 100%;
-  height: 20%;
-  margin-top: 0.50em;
-  padding: 0.50em;
-  content: "";
-  display: inline-block;
-  clear: both;
   color: white;
+ }
+
+ .bottom::after{
+  content: "";
+  display: block;
+  clear: both;
  }
 
  .bottom p{
   /* border: 2px solid white; */
   width: 50%;
   float: left;
-  font-size: 1.5rem;
+  font-weight: 500;
  }
 
- .bottom .button{
+ .bottom .btn{
+  /* border: 2px solid white; */
   width: 50%;
   float:right;
   text-align: center;
+  padding: 0.5em;
  }
 
- .button button{
-  background-color: rgb(177, 19, 72);
-  /* border: 2px solid rgb(255, 255, 255); */
-  width:150px;
-  height: 25px;
-  font-size: 1.6rem;
-  color: white;
+ .bottom a{
+  border: 2px solid white;
+  padding: 0.1em 1em;
+  border-radius: 5px;
  }
 
-/*
- .lists ul .fistul{
-  float: left;
-  width: 50%;
- }
 
- .lists ul .secondul{
-  float: right;
-  width: 50%;
- } */
+ /********************************Media Query******************************************/
+@media (max-width:500px) {
+  .navbar{
+    padding: 1rem 0;
+  }
+  .navbar h1, ul{
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+  .navbar ul li{
+    padding-right: 0.5rem;
+    font-size: 1rem;
+  }
+  
+}
+@media screen and (max-width:600px) {
+  .aboutus .parafontsize{
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .mg-heading{
+    font-size: 1.5rem;
+  }
+}

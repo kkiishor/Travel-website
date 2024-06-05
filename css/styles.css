@@ -49,7 +49,6 @@ html{
   /* border: 2px solid black; */
   height: 95vh;
   background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),url(../img/Bg.jpg);
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -90,8 +89,6 @@ li a:hover{
   color: black;
   font-size: 1.6rem;
 }
-
-
 
 .logo{
   /* border: 2px solid black; */
