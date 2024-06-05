@@ -38,17 +38,20 @@ a{
   background-color: #334147;
   padding: 2.5rem;
 }
-.navbar::after{
+.navbar::after, 
+.container::after{
   content: "";
   display: block;
   clear: both;
 }
 
 .navbar h1{
+  /* border: 1px solid white; */
   float: left;
   color: white;
 }
 .navbar ul{
+  /* border: 1px solid white; */
   float: right;
 }
 
@@ -65,9 +68,9 @@ a{
   padding: 5% 0;
 }
 
-.fromwrapper{
+/* .fromwrapper{
   border: 2px solid black;
-}
+} */
 
 .fromwrapper::after{
   content: "";
@@ -76,7 +79,7 @@ a{
 }
 
 .addressInfo{
-  border: 1px solid green;
+  /* border: 1px solid green; */
   float: left;
   width: 49%;
   padding: 1rem;
@@ -93,7 +96,7 @@ a{
 }
 
 .form{
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   float: right;
   width: 49%;
   padding: 1rem;
@@ -184,6 +187,25 @@ footer{
   }
   .parafontsize{
     font-size: 1rem;
+  }
+
+  .navbar{
+    padding: 1.2rem;
+  }
+
+  .navbar h1{
+    font-size: 2rem;
+  }
+
+  .navbar ul li{
+    font-size: 1.35rem;
+  }
+  
+  .navbar h1, ul{
+    padding: 0.5rem;
+    float: none;
+    text-align: center;
+    width: 100%;
   }
 
 }
