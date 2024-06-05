@@ -75,7 +75,7 @@ html{
 
 .navigation li{
   /* border: 2px solid blue; */
-  display: inline;
+  display: inline-block;
   padding: 0 1.3rem;
 }
 
@@ -141,7 +141,7 @@ button{
 }
 
 .firstsection , .secondsection{
-  border: 2px solid black;
+  /* border: 2px solid black; */
   height: 230px;
 }
 
@@ -199,7 +199,7 @@ button{
 
  .thirdPage .beforeFooter{
   /* border: 3px solid blue; */
-  padding: 10rem 0;
+  padding-bottom: 10rem;
   background-color: #ddd;
 
 }
@@ -213,6 +213,7 @@ button{
 .adventourus,
 .lessPrice,
 .experience{
+  /* border: 1px black solid; */
   width: 33.33%;
   float: left;
   text-align: center;
@@ -221,10 +222,14 @@ button{
 
 .thirdPagePara{
   /* border: 1px solid green; */
+  font-size: 1.1rem;
   margin-top: 0.5rem;
   font-weight: 500;
   line-height: 1.6;
-  padding: 3rem 0;
+}
+
+.beforeFooter .thirdPageH1{
+  padding: 1rem 0;
 }
 
 .adventourus,
@@ -254,12 +259,12 @@ button{
 
  footer img{
   margin-right: 20px;
-  width: 4em;
+  width: 3.5em;
   height: auto;
  }
 
  footer p{
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 500;
  }
 
@@ -292,12 +297,19 @@ button{
     float: none;
     text-align: center;
   }
-
-
+  .navigation{
+    padding: 1rem 0;
+  }
   .navigation li{
-    /* border: 2px solid blue; */
-    display: inline;
-    padding: 0 0.5rem;
+    padding: 0 1rem;
+  }
+
+  .navigation a{
+    font-size: 1.3rem;
+  }
+  
+  .center p{
+    display: none;
   }
 
   .center botton{
@@ -305,10 +317,45 @@ button{
     font-size: 0.5rem;
   }
 
+  .secondPage{
+    padding: 5rem 0;
+  }
+
+  .thirdPage .beforeFooter{
+    padding-bottom: 5rem;
+    padding-top: 0;
+  }
+
   .thirdPagePara {
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: 0.5rem;
   }
+.thirdPage
+.adventourus,
+.lessPrice,
+.experience{
+  width: 100%;
+  float: none;
+  text-align: center;
+  padding: 2rem;
+}
+.thirdPage
+.adventourus,
+.lessPrice{
+  margin-bottom: 1.1rem;
+}
+
+footer{
+  padding: 1rem 0;
+ }
+
+ footer p{
+  font-size: 1.2rem;
+ }
+
+ footer img{
+  width: 2.5em;
+ }
 
 } 
  
