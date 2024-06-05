@@ -129,8 +129,8 @@ a{
  .bottom{
   /* border: 2px solid black; */
   background-color: crimson;
-  width: 100%;
   color: white;
+  height: 32px;
  }
 
  .bottom::after{
@@ -139,25 +139,26 @@ a{
   clear: both;
  }
 
- .bottom p{
+ .bottom .bottomParagraph{
   /* border: 2px solid white; */
-  width: 50%;
+  width: 60%;
   float: left;
   font-weight: 500;
  }
 
  .bottom .btn{
-  /* border: 2px solid white; */
-  width: 50%;
+  /* border: 2px solid rgb(9, 24, 235); */
+  width: 40%;
   float:right;
   text-align: center;
-  padding: 0.5em;
+  margin-top: 0.5rem;
  }
 
- .bottom a{
+ .bottom .btn-cta{
   border: 2px solid white;
-  padding: 0.1em 1em;
   border-radius: 5px;
+  font-size: 1.7rem;
+  padding: 0 0.5rem;
  }
 
 
@@ -178,7 +179,7 @@ a{
   }
   
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:700px) {
   .aboutus .parafontsize{
     font-size: 1.1rem;
     font-weight: 500;
@@ -187,4 +188,21 @@ a{
   .mg-heading{
     font-size: 1.5rem;
   }
+
+  .bottom{
+    height: 60px;
+  }
+  .bottom .bottomParagraph,
+  .bottom .btn{
+    float: none;
+    width:100%;
+    text-align: center;
+  }
+  .bottomParagraph .parafontsize{
+    font-size: 1.2rem;
+  }
+  .bottom .btn .btn-cta{
+    font-size: 1.5rem;
+  }
+
 }
