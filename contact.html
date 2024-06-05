@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/contact.css">
+  <script src="https://kit.fontawesome.com/24cef4e54d.js" crossorigin="anonymous"></script>
   <title>Contact</title>
 </head>
 <body>
@@ -18,34 +19,62 @@
     </div>
   </div>
 
-    <div class="contactform">
+    <section class="contactform">
       <div class="container">
-        <div class="info">
-          <h3>LOCATION</h3>
-          <p>KHARADI BYPASS, PUNE </p><br>
-          <h3>E-MAIL</h3>
-          <p>KISHORDUKRE@GMAIL.COM</p><br>
-          <h3>CALL</h3>
-          <p>9074652536</p><br>
-          <img src="" alt="from">
-        </div>
-
-        <div class="forminfo">
-          <h2>Contact us</h2>
-          <p>lets us know your quetions, concerns and suggetions by filling out following info.</p><br>
+        <div class="fromwrapper">
+          <div class="addressInfo">
+            <div class="address-group">
+              <i class="fa-solid fa-location-dot fa-2xl" style="color: #ff0000;"></i>
+              <h2 class="mg-heading">LOCATION</h3>
+              <p class="parafontsize">KHARADI BYPASS, PUNE </p>
+            </div>
+            <div class="address-group">
+              <i class="fa-regular fa-envelope fa-2xl" style="color: #ff0000;"></i>
+              <h2>E-MAIL</h3>
+              <p class="parafontsize">KISHORDUKRE@GMAIL.COM</p>
+            </div>
+            <div class="address-group">
+              <i class="fa-solid fa-phone fa-2xl" style="color: #ff0000;"></i>
+              <h2>CALL</h3>
+              <p class="parafontsize">9074652536</p>
+            </div>
+            <img src="img/form.jpg" alt="from">
+          </div>
+  
           <form action="" class="form">
-            <label for="username">Username:</label><br>
-            <input type="text" id="username"><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email"><br><br>
-            <label for="phone">Phone:</label><br>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"><br><br>
-            <label for="msg">Message:</label><br>
-            <textarea name="msg" id="msg">type here...</textarea><br>
-            <button>Submit</button>
+            <h1 class="mg-heading">Contact Us</h1>
+            <p class="mg-heading">lets us know your quetions, concerns and suggetions by filling out following info.</p>
+            <div class="form-group">
+              <label class="mg-heading" for="username">Username:</label>
+              <input type="text" id="username" required>
+            </div>
+            <div class="form-group">
+              <label class="mg-heading" for="email">Email:</label>
+              <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+              <label class="mg-heading" for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </div>
+            <div class="form-group">
+              <label class="mg-heading" for="msg">Message:</label>
+              <textarea name="msg" id="msg" required>type here...</textarea>
+            </div>
+              <button type="submit" class="form-btn">Submit</button>
           </form>
+          
         </div>
       </div>
-    </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <img src="img/insta.png" alt=""insta class="insta">
+        <img src="img/linkedin.png" alt="linkedin" class="linkedin">
+        <img src="img/twitter.png" alttwitter class="twitter"><br>
+        <p>Word Travel &#169; 2020, All Rights Reserved</p>
+      </div> 
+    </footer>
+    
 </body>
 </html>

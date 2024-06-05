@@ -12,15 +12,15 @@ html{
 }
 
 .container{
-  border: 2px rgb(47, 0, 255) solid;
+  /* border: 2px rgb(47, 0, 255) solid; */
   max-width: 1000px;
   width: 90%;
   margin: 0 auto;
-  padding: 0 5rem;
+  padding: 0 3rem;
 }
 
 .mg-heading{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .parafontsize{
@@ -32,7 +32,7 @@ a{
   color: white;
 }
 
-/****************************************************************************/
+/************************************** Navbar Section **************************************/
 .navbar{
   /* border: 2px solid red; */
   background-color: #334147;
@@ -58,43 +58,133 @@ a{
   font-size: 1.5rem;
 }
 
+/************************************* Contact section *****************************************/
 
 .contactform{
-  border: 3px solid black;
+  /* border: 3px solid red; */
   padding: 5% 0;
 }
-/*
-.container .info{
-  background-color: white;
-  border: 1px solid red;
-  font-size: 1.2em;
-  width: 50%;
-  height: 100%;
+
+.fromwrapper{
+  border: 2px solid black;
+}
+
+.fromwrapper::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.addressInfo{
+  border: 1px solid green;
   float: left;
-  padding: 1em;
+  width: 49%;
+  padding: 1rem;
 }
 
-.container .forminfo{
-  border: 1px black solid;
-  background-color: white;
-  font-size: 1.5em;
-  width: 50%;
-  height: 100%;
+.addressInfo .address-group{
+  margin-bottom: 2rem;
+}
+
+.addressInfo img{
+  width: 90%;
+  height: 30rem;
+  object-fit: cover;
+}
+
+.form{
+  border: 1px solid gray;
   float: right;
-  padding: 1em;
-}
-.info img{
-  width: 100%;
-  height: 66%;
+  width: 49%;
+  padding: 1rem;
 }
 
-input, textarea{
-  width: 100%;
+.address-group h2{
+  display: inline;
 }
 
-button{
-  padding: 0.50em 3em;
-  margin-left: 11em;
-  background-color: brown;
-  color: wheat;
-} */
+.address-group p{
+  padding: 1rem 0;
+  font-weight: 500;
+}
+
+/*******************************Form Info********************************************/
+.form h1{
+  font-size: 2rem;
+}
+.form h1::after{
+  content: "";
+  display: block;
+  border: 3px solid #e63946;
+  margin: 1rem 0;
+}
+
+.form label{
+  display: block;
+}
+.form label::after{
+  content: "*";
+  color: red;
+}
+.form input{
+  width: 100%;
+}
+.form .form-group{
+  margin: 1.2rem 0;
+}
+.form textarea{
+  width: 100%;
+  height: 220px;
+}
+
+.form-btn{
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em 3em;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background-color: #e63946;
+}
+
+/*************************************Footer**********************************/
+footer{
+  /* border: 1px solid green; */
+  background-color: #919597;
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem 0;
+ }
+
+ footer img{
+  margin-right: 20px;
+  width: 4em;
+  height: auto;
+ }
+
+ footer p{
+  font-size: 1.5rem;
+  font-weight: 500;
+ }
+
+ /*****************************Media Query***************************************/
+
+@media screen and (max-width:540px) {
+  .fromwrapper .addressInfo,
+  .fromwrapper .form{
+    float: none;
+    width: 100%;
+  }
+
+  .fromwrapper .form{
+    margin-top: 5rem;
+  }
+  .mg-heading{
+    font-size: 1.3rem;
+  }
+  .parafontsize{
+    font-size: 1rem;
+  }
+
+}
+
