@@ -80,14 +80,13 @@ html{
 }
 
 li a:hover{
-  color: green;
   text-decoration: underline;
 }
 
 .navigation a{
   text-decoration: none;
-  color: black;
   font-size: 1.6rem;
+  color: black;
 }
 
 .logo{
